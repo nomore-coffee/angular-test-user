@@ -1,0 +1,74 @@
+<p>registteration-page works!</p>
+<div class="container">
+	<div class="screen">
+		<div class="screen__content">
+			<form class="login" [formGroup]="registerForm" (ngSubmit)="register()">
+                <div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text" formControlName="name" class="login__input" placeholder="Name">
+				</div>
+				<div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="email"  formControlName="emailid" class="login__input" placeholder="Email">
+				</div>
+				<div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text" formControlName="username" class="login__input" placeholder="UserNmae">
+				</div>
+				<div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text" formControlName="address" class="login__input" placeholder="Address">
+				</div>
+					<p style="font-weight: bolder;">Qualification</p>
+				<div class="form-check form-check-inline">
+					<input
+					  mdbRadio
+					  class="form-check-input"
+					  type="radio"
+					  name="inlineRadioOptions"
+					  id="inlineRadio1"
+					  value="option1"
+					/>
+					<label class="form-check-label" for="inlineRadio1">SSC</label>
+				  </div>
+				  <div class="form-check form-check-inline">
+					<input
+					  mdbRadio
+					  class="form-check-input"
+					  type="radio"
+					  name="inlineRadioOptions"
+					  id="inlineRadio2"
+					  value="option2"
+					/>
+					<label class="form-check-label" for="inlineRadio2">HSC</label>
+				  </div>
+				  <div class="form-check form-check-inline">
+					<input
+					  mdbRadio
+					  class="form-check-input"
+					  type="radio"
+					  name="inlineRadioOptions"
+					  id="inlineRadio3"
+					  value="option3"
+					/>
+					<label class="form-check-label" for="inlineRadio3">Graduate</label>
+				  </div>
+				<div class="login__field">
+					<i class="login__icon fas fa-lock"></i>
+					<input type="password"  formControlName="password" class="login__input" placeholder="Password">
+				</div>
+				
+                <button class="button login__submit">
+                    <span class="button__text">Register</span>
+                    <i class="button__icon fas fa-chevron-right"></i>
+                </button>
+			</form>
+		</div>
+		<div class="screen__background">
+			<span class="screen__background__shape screen__background__shape4"></span>
+			<span class="screen__background__shape screen__background__shape3"></span>		
+			<span class="screen__background__shape screen__background__shape2"></span>
+			<span class="screen__background__shape screen__background__shape1"></span>
+		</div>		
+	</div>
+</div>
