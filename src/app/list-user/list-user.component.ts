@@ -19,6 +19,7 @@ export class ListUserComponent implements OnInit  {
     this.http.get<any>("http://localhost:8000/user/").subscribe(res=>{
       if(res.statusCode==200){
         this.data=res.data
+        console.log(this.data)
       }
     })
   }
