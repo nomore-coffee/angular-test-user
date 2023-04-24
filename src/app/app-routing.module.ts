@@ -5,7 +5,7 @@ import { RegistterationPageComponent } from './registteration-page/registteratio
 import { ListUserComponent } from './list-user/list-user.component';
 
 const routes: Routes = [
-  {path:'login' , component:LoginPageComponent},
+  {path:'' , component:LoginPageComponent},
   {path:'register' , component:RegistterationPageComponent},
   {path:'user-list' , component:ListUserComponent},
 ];
